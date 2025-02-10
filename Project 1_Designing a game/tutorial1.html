@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 1</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <h1>Welcome to Tutorial 1</h1>
+    <h3>Han Zheng</h3>
+    <h2 id="clickBtn">Click the button below to start your Tutorial</h2>
+    <div id="startBtn">
+    <button id="startTutorial">Start Tutorial</button>
+    </div>
+
+    <div id="quizContainer" class="hidden">
+        <p id="question"></p>
+        <div id="choices"></div>
+        <p id="feedback"></p>
+    </div>
+
+<a id="goBack" href="index.html"><button>Go Back</button></a>
+
+    <script>
+        const questions = [
+            {
+                question: "What is the TCP/IP?",
+                choices: ["communication protocols that define how data should travel across the internet",
+                 "communication protocals that makes computer run faster",
+                  "communication protocols that makes computer run slower",
+                   "communication protocols that makes internet faster"],
+                correctAnswer: "communication protocols that define how data should travel across the internet"
+            },
+            {
+                question: "What accurately describes DNS?",
+                choices: ["stores data",
+                 "Address book for websites",
+                  "a type of computer",
+                   "a chat-gpt alike website"],
+                correctAnswer: "Address book for websites"
+            },
+            {
+                question: "What is HTTP?",
+                choices: ["A type of protocol used to store information",
+                 "application protocol that defines a language for clients and servers to speak to each other",
+                  "It is a program that modifies your website",
+                   "All of the above"],
+                correctAnswer: "application protocol that defines a language for clients and servers to speak to each other"
+            }
+        ];
+    </script>
+    <script src="tutorial.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 2</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <h1>Welcome to Tutorial 2</h1>
+    <h3>Han Zheng</h3>
+    <h2 id="clickBtn">Click the button below to start your Tutorial</h2>
+    <div id="startBtn">
+    <button id="startTutorial">Start Tutorial</button>
+    </div>
+
+    <div id="quizContainer" class="hidden">
+        <p id="question"></p>
+        <div id="choices"></div>
+        <p id="feedback"></p>
+    </div>
+
+    <a id="goBack" href="index.html"><button>Go Back</button></a>
+
+    <script>
+        const questions = [
+            {
+                question: "Which of the following code can be used to declare a variable in javascript?",
+                choices: ["let", 
+                "var",
+                 "const",
+                  "all of the above"],
+                correctAnswer: "all of the above"
+            },
+            {
+                question: "What is the difference between const and let?",
+                choices: ["you can change the value stored in const after initializing it",
+                 "you cannot change the value stored in const after initializing it",
+                  "they are the same ",
+                   "none of the above"],
+                correctAnswer: "you cannot change the value stored in const after initializing it"
+            },
+            {
+                question: "What is a string?",
+                choices: ["integer",
+                 "decimals",
+                  "an array",
+                   "pieces of texts"],
+                correctAnswer: "pieces of texts"
+            },
+            {
+                question: "What is true about array?",
+                choices: ["contains multiple values",
+                 "it is an integer",
+                  "it can only store one type of data ",
+                   "none of the above"],
+                correctAnswer: "contains multiple values"
+            },
+            {
+                question: "which of the following code do you use to find the length of a string?",
+                choices: ["stringName.number",
+                 "stringName.length",
+                  "stringName.size",
+                   "stringName.weight"],
+                correctAnswer: "stringName.length"
+            },
+            {
+                question: "what does === do ?",
+                choices: ["to see if two values are the same type only",
+                 "to see if two sides are exactly the same in type and value",
+                  "to find an answer of an equation",
+                   "none of the above"],
+                correctAnswer: "to see if two sides are exactly the same in type and value"
+            },
+            {
+                question: "which of the following stands for less than or equal to?",
+                choices: ["=<",
+                 "<=",
+                  ">=",
+                   "non of the above"],
+                correctAnswer: "<="
+            },
+            {
+                question: "What more accuratly describes a function?",
+                choices: ["A reusable block of code that performs a specific task",
+                 "a mathmatical equation",
+                  "an array",
+                   "none of the above"],
+                correctAnswer: "A reusable block of code that performs a specific task"
+            },
+            {
+                question: "What is an event?",
+                choices: ["Things happening on campus like career fair",
+                 "Sporting events",
+                  "things happening in the system like click, pressing a key, etc.",
+                   "none of the above"],
+                correctAnswer: "things happening in the system like click, pressing a key, etc."
+            },
+            {
+                question: "Which of the following code listens for an event?",
+                choices: ["lookForEvent()",
+                 "addEventListener()",
+                  "findEvent()",
+                   "None of the above"],
+                correctAnswer: "addEventListener()"
+            },
+            {
+                question: "What does HTML stands for?",
+                choices: ["Hyped up Text Manipulation Language",
+                 "High Tech Markup Language",
+                  "Hypertext Markup Language",
+                   "None of the above"],
+                correctAnswer: "Hypertext Markup Language"
+            },
+            {
+                question: "What does CSS stands for?",
+                choices: ["cascading startup sheet",
+                 "casting style sheet",
+                  "control style sheet",
+                   "none of the above"],
+                correctAnswer: "none of the above"
+            },
+            {
+                question: "which of the following code do you use to find the datatype?",
+                choices: ["typeIs",
+                 "whatType",
+                  "typeof",
+                   "none of the above"],
+                correctAnswer: "typeof"
+            },
+            {
+                question: "which character(s) represents exponents?",
+                choices: ["^",
+                 "**",
+                  "*",
+                   "none of the above"],
+                correctAnswer: "**"
+            }
+        ];
+    </script>
+    <script src="tutorial.js"></script>
+</body>
+</html>
