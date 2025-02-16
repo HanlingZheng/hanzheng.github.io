@@ -1,0 +1,56 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; /* Increase the font size */
+}
+
+ul li {
+    background-color: skyblue;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    flex: 1 1 calc(100% - 10px); /* 1 block per line */
+    box-sizing: border-box;
+}
+
+ul li:hover {
+    background-color: lightblue;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Increase the font size */
+    font-family: 'Bagel Fat One', cursive;
+    display: block;
+    text-align: center; /* Center the link */
+}
+
+ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Bagel Fat One', cursive;
+}
+
+body {
+    background-color: skyblue;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
